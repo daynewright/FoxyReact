@@ -1,4 +1,4 @@
-import * as action from './actionCreators';
+import * as actions from './actionCreators';
 
 // all products
 export const getAllProducts = () => ({

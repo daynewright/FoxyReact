@@ -8,8 +8,8 @@ const Navbar = () => (
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-6"> 
             <ul className="nav navbar-nav">
               <li className="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li> 
-              <li><a href="#">Link</a></li> 
+              <li><a href="#">About Us</a></li> 
+              <li><a href="#">Contact Us</a></li> 
             </ul> 
           </div>
         </div>

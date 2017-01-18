@@ -1,6 +1,6 @@
 import { fork } from 'redux-saga/effects';
 import { watchGetProducts } from './productsSaga';
-import * as product from '.productSaga';
+import { watchGetProduct } from './productSaga';
 
 
 function startSagas(...sagas) {

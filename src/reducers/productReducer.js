@@ -1,7 +1,7 @@
-import { product } from './initialState';
-import * as a from '..actions/actionTypes';
+import initialState from './initialState';
+import * as a from '../actions/actionTypes';
 
-export default function productReducer(state = product, action) {
+export default function productReducer(state = initialState.product, action) {
   switch(action.type) {
     case a.GET_PRODUCT:
         return {

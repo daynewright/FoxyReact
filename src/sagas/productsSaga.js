@@ -1,7 +1,6 @@
 import { takeEvery, call, put } from 'redux-saga/effects';
 import axios from 'axios';
 import * as actions from '../actions/actionCreators';
-import * as a from '../action/actionTypes';
 import { browserHistory } from 'react-router';
 
 function* getAllProducts() {
@@ -13,9 +12,10 @@ function* getAllProducts() {
         yield put(actions.getAllProductsSuccess(data));
     } catch(error) {
         yield put(actions.getAllProductsFailure(error));
+        browserHistory.push(`/404/`);
     }
 }
 
 export function* watchGetProducts() {
-    yield* takeEvery(actions.GET_PRODUCTS);
+    yield* takeEvery(actions.GET_PRODUCTS, getAllProducts);
 }

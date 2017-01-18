@@ -1,7 +1,6 @@
-import { take, call, put, fork } from 'redux-saga/effects';
+import { takeEvery, call, put } from 'redux-saga/effects';
 import axios from 'axios';
 import * as actions from '../actions/actionCreators';
-import * as a from '../action/actionTypes';
 import { browserHistory } from 'react-router';
 
 function* getSingleProduct(id) {
@@ -12,10 +11,11 @@ function* getSingleProduct(id) {
         yield put(actions.getSingleProductSuccess(data));
     } catch(error) {
         yield put(actions.getSingleProductFailure(error));
+        browserHistory.push(`/404/`);
     }
 }
 
 export function* getProduct() {
-    yield* takeEvery(actions.GET_SINGLE_PRODUCT);
+    yield* takeEvery(actions.GET_SINGLE_PRODUCT, getSingleProduct);
 }
 

@@ -7,9 +7,8 @@ const Navbar = () => (
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-6"> 
             <ul className="nav navbar-nav">
-              <li className="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li> 
-              <li><a href="#">Link</a></li> 
+              <li className="active"><Link to="/">BUY ME :)</Link></li>
+              <li className=""><Link to="/cart">Cart</Link></li>
             </ul> 
           </div>
         </div>

@@ -3,3 +3,18 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.panel {
+  width: 30%;
+  min-width: 300px;
+}
+img {
+  max-width: 100%;
+}
+

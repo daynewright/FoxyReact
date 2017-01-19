@@ -1,8 +1,32 @@
+import * as actions from './actionTypes';
 
-export const GET_PRODUCTS = 'GET_PRODUCTS';
-export const GET_PRODUCTS_SUCCESS = 'GET_PRODUCTS_SUCCESS';
-export const GET_PRODUCTS_FAILURE = 'GET_PRODUCTS_FAILURE';
+// all products
+export const getAllProducts = () => ({
+    type: actions.GET_PRODUCTS
+});
 
-export const GET_SINGLE_PRODUCT = 'GET_SINGLE_PRODUCT';
-export const GET_SINGLE_PRODUCT_SUCCESS = 'GET_SINGLE_PRODUCT_SUCCESS';
-export const GET_SINGLE_PRODUCT_FAILURE = 'GET_SINGLE_PRODUCT_FAILURE';
+export const getAllProductsSuccess = (products) => ({
+    type: actions.GET_PRODUCTS_SUCCESS,
+    payload: products.data
+});
+
+export const getAllProductsFailure = (error) => ({
+    type: actions.GET_PRODUCTS_FAILURE,
+    payload: { error }
+});
+
+// single product
+export const getSingleProduct = () => ({
+    type: actions.GET_SINGLE_PRODUCT
+});
+
+export const getSingleProductSuccess = (product) => ({
+    type: actions.GET_SINGLE_PRODUCT_SUCCESS,
+    payload: { product }
+});
+
+export const getSingleProductFailure = (error) => ({
+    type: actions.GET_SINGLE_PRODUCT_FAILURE,
+    payload: { error }
+});
+ 

@@ -11,7 +11,7 @@ export default function productsReducers(state = initialState.products, action) 
     case a.GET_PRODUCTS_SUCCESS:
       return {
         ...state,
-        productsArray: [...action.payload.products],
+        productsArray: [...action.payload],
         loading: false,
         error: null
       };

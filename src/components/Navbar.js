@@ -8,7 +8,7 @@ const Navbar = () => (
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-6"> 
             <ul className="nav navbar-nav">
               <li className="active"><Link to="/">BUY ME :)</Link></li>
-              <li className=""><Link to="/cart">Cart</Link></li>
+              <li className=""><Link to="https:stuffstore.foxycart.com/cart?cart=view">Cart</Link></li>
             </ul> 
           </div>
         </div>

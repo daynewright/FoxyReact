@@ -20,7 +20,7 @@ class ProductsListContainer extends Component {
                     <img src={image} alt={product.id}/>
                     <h4 className="card-title">{name || 'BUY ME! :)'}</h4>
                     <p className="card-text">$ {price}</p>
-                    <a href={`https:stuffstore.foxycart.com/cart?name=${product.id}&price=${price}&image=${image}`} className="btn btn-primary">Add To Cart</a>
+                    <a href={`https:stuffstore.foxycart.com/cart?name=${name}&price=${price}&image=${image}`} className="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
         );

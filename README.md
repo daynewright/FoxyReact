@@ -7,3 +7,7 @@ Uses a simple giphy API (no auth needed) to list out "products" with buying opti
 React | Redux | Redux Sagas
 
  Demo: [FoxyReact](http://dayne.me/FoxyReact)
+
+<p align="center">
+  <img src="images/foxyReact.png" />
+</p>
